@@ -22,7 +22,7 @@ def reconstruct_trip(tickets, length):
     i = 0
     current_dest= "NONE"
 
-    while i < length - 1:
+    while i < length:
         current_dest = hash_table_retrieve(hashtable, current_dest)
         route[i] = current_dest
         i += 1
